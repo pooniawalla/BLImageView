@@ -36,6 +36,9 @@ Add BLImageView class into your project.
     
     // Set text
     _imageView.overLabel.text = @"Jennifer Lawrence stars in The Hunger Games: Mockingjay Part 2";
+    
+    //Set delegate if you need action on image touchUpInside
+    _imageView.delegate = self;
 }
 
 #pragma mark - Image Click Action
