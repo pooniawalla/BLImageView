@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLImageView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fla-zf-q6K">
+                                <rect key="frame" x="240" y="20" width="120" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="CHA-aW-Whf"/>
+                                    <constraint firstAttribute="height" constant="21" id="sqk-Zc-x3z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample_jennifer_lawrence" translatesAutoresizingMaskIntoConstraints="NO" id="Gyc-Lf-94r" customClass="BLImageView">
+                                <rect key="frame" x="195" y="60" width="210" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="cKy-e0-5SE"/>
+                                    <constraint firstAttribute="height" constant="138" id="t4R-xc-xcs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="fla-zf-q6K" secondAttribute="centerX" id="Iy7-wg-bgQ"/>
+                            <constraint firstItem="fla-zf-q6K" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="R64-75-59t"/>
+                            <constraint firstAttribute="centerX" secondItem="Gyc-Lf-94r" secondAttribute="centerX" id="g0A-RB-gjo"/>
+                            <constraint firstItem="Gyc-Lf-94r" firstAttribute="top" secondItem="fla-zf-q6K" secondAttribute="bottom" constant="19" id="p3J-Te-Oms"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView1" destination="Gyc-Lf-94r" id="abe-1B-jGp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sample_jennifer_lawrence" width="225" height="152"/>
+    </resources>
+</document>
